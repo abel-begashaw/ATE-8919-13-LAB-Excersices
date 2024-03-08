@@ -1,0 +1,35 @@
+class Rectangle {
+  int width;
+  int length;
+
+  Rectangle(this.width, this.length);
+
+  int Area(){
+    return width * length;
+  }
+
+  int Perimeter() {
+    return 2 * (width + length);
+  }
+}
+
+
+void main() {
+  Rectangle rectangle1 = Rectangle(10, 20);
+  print(rectangle1.Area());
+  print(rectangle1.Perimeter());
+
+  print("\n");
+
+  Rectangle rectangle2 = Rectangle(11, 21);
+  print(rectangle2.Area());
+  print(rectangle2.Perimeter());
+
+  print("\n");
+
+  Rectangle rectangle3 = Rectangle(32, 40);
+  print(rectangle3.Area());
+  print(rectangle3.Perimeter());
+  
+  print("\n");
+}
